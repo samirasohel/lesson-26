@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 1</title>
+</head>
+<body>
+    <h3>JS class</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        class student{
+            constructor (name,age){
+                this.name=name;
+                this.age=age;
+            }
+            show(){
+                return this.name+" is of age "+this.age;
+            }
+        }
+        s1=new student ("samira",20);
+        document.getElementById("p1").innerHTML=s1.name;
+         document.getElementById("p1").innerHTML =s1.name;
+          document.getElementById("p1").innerHTML =s1.show();
+
+    </script>
+</body>
+</html>
