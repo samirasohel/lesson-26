@@ -7,5 +7,35 @@
 </head>
 <body>
     <h3>Class inheritance</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        class car{
+            constructor(brandname){
+                this.brandname=brandname;
+            }
+            show(){
+                return " this is "+this.brandname;
+            }
+        }
+            //child class
+            class model extends car{
+                constructor(brand,mod){
+                    super(brand);
+                    this.name=mod;
+                }
+                present(){
+                    return " "+this.show()+" and the model is "+this.mod;
+                }
+            }
+                m1=new model("maruti","celerio");
+                document.getElementById("p1").innerHTML=m1.present();
+                document.getElementById("p2").innerHTML=m1.brandname;
+
+
+            
+        
+    </script>
 </body>
 </html>
